@@ -9,18 +9,15 @@ def calculate_pi(iterations):
     return pi
 
 iterations = 1
-finished = False
-while not finished:
+
+while True:
     print("Current number of iterations:", iterations)
     print("Estimated value of Pi:", calculate_pi(iterations))
     print()
 
     user_input = input("Enter a number of iterations or 'q' to quit: ")
     if user_input == 'q':
-        finished = True
-
-    if user_input == str:
-        raise ValueError
+        break
 
     try:
         iterations = int(user_input)
